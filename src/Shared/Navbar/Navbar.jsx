@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { IoIosSearch } from "react-icons/io";
 
 const Navbar = ()=>{
-     
+
     return(
         <div>
             <div className="navbar max-w-[1400px] mx-auto w-full">
@@ -32,23 +32,23 @@ const Navbar = ()=>{
     </Link>
     <div>
  <fieldset className="fieldset relative">
-  
-    <input type="text" className="input w-[320px] rounded-full pl-[40px] pr-[20px]" 
+
+    <input type="text" className="input w-[320px] rounded-full pl-[40px] pr-[20px]"
     placeholder="স্কিলস কোর্স, কিংবা স্কুল প্রোগ্রাম সার্চ করুন..." />
-    <IoIosSearch className="absolute left-[12px] 
-    text-[18px] font-semibold text-black top-[15px]"/> 
-     
+    <IoIosSearch className="absolute left-[12px]
+    text-[18px] font-semibold text-black top-[15px]"/>
+
 </fieldset>
     </div>
     </div>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-     
+
       <li>
         <details>
           <summary className="text-gray-500 font-semibold text-[16px]">Class 6-12</summary>
-          <ul className="p-2">
+          <ul className="p-2 z-[999]">
             <li><a>Submenu 1</a></li>
             <li><a>Submenu 2</a></li>
           </ul>
@@ -104,7 +104,7 @@ const Navbar = ()=>{
           </ul>
         </details>
       </li>
-     
+
     </ul>
   </div>
   <div className="navbar-end">
