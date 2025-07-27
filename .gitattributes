@@ -1,0 +1,16 @@
+# Automatically normalize line endings
+* text=auto
+
+# Ensure consistent line endings for JavaScript and JSX files (LF only)
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+
+# Treat these files as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mp4 binary
