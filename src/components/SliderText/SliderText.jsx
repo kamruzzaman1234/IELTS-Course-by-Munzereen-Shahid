@@ -37,7 +37,7 @@ const SliderText = () => {
     }
   };
 
-  // 🔍 Find Instructor Section
+
   const instructorSection = text?.sections?.find(sec => sec.type === "instructors");
   const instructor = instructorSection?.values?.[0];
 
@@ -46,7 +46,7 @@ const SliderText = () => {
       <div className="max-w-[1160px] mx-auto w-full">
         <div>
 
-          <div className="border-b max-w-[800px] w-full border-gray-300">
+          <div className="border-b sticky top-0 z-[700px] max-w-[800px] w-full border-gray-300">
             <div className="flex items-center gap-2 overflow-hidden px-2 py-2">
 
               <button
@@ -85,7 +85,7 @@ const SliderText = () => {
               <h4 className="text-[32px] font-semibold text-black">
                 {instructor.short_description}
               </h4>
-              <div className="border-1 border-gray-300 py-[30px] mt-[20px] px-[20px]">
+              <div className="border-1 border-gray-300 py-[30px] mt-[7px] px-[20px]">
                 <div className="flex gap-[30px]">
                   <div className="w-[100px] h-[100px]">
                     <img

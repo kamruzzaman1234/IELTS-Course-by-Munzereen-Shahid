@@ -1,5 +1,6 @@
 import Banner from "../../components/Banner/Banner";
 import CourseView from "../../components/CourseView/CourseView";
+import FreePdfArea from "../../components/FreePdfArea/FreePdfArea";
 import HeadersTitle from "../../components/Header/HeadersTitle";
 import SliderText from "../../components/SliderText/SliderText";
 
@@ -13,6 +14,7 @@ const Home = () => {
       <div className="max-w-[1160px] mx-auto w-full">
         <div className="max-w-[800px] w-full">
              <CourseView></CourseView>
+             <FreePdfArea></FreePdfArea>
         </div>
 
       </div>
