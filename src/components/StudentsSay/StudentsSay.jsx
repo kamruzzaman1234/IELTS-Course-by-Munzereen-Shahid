@@ -14,7 +14,7 @@ const StudentsSay = () => {
   }, []);
 
   return (
-    <div className=" py-[60px] flex flex-col gap-4  px-[20px]
+    <div className=" py-[0px] flex flex-col gap-4  px-[20px]
     md:px-[30px] lg:px-[0px] b">
       <h2 className="text-[22px] font-semibold ">শিক্ষার্থীরা যা বলছে</h2>
       <Say items={text} />

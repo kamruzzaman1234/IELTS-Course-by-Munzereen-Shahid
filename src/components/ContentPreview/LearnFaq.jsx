@@ -31,7 +31,7 @@ const courseData = [
 ];
 
 const LearnFAQ = () => {
-  const [openIndex, setOpenIndex] = useState(0); 
+  const [openIndex, setOpenIndex] = useState(0);
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -57,17 +57,17 @@ const LearnFAQ = () => {
               ) : (
                 section.items.map((item, idx) => (
                   <div key={idx} className="flex justify-between items-center py-4 ">
-                    <div className="flex items-center gap-2 text-gray-800">
+                    <div className="flex items-center gap-2 text-black">
                       {item.type === "video" ? (
                         item.free ? (
                           <FaPlayCircle className="text-green-500" />
                         ) : (
-                          <MdOutlinePlayCircleFilled className="text-gray-400" />
+                          <MdOutlinePlayCircleFilled className="text-black" />
                         )
                       ) : (
-                        <BsFileText className="text-gray-500" />
+                        <BsFileText className="text-black" />
                       )}
-                      <span className={`${!item.free ? 'text-gray-500' : ''}`}>
+                      <span className={`${!item.free ? 'text-black' : ''}`}>
                         {item.type === "video" ? "Video: " : ""}
                         {item.title}
                       </span>

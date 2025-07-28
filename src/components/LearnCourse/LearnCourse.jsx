@@ -16,7 +16,7 @@ const LearnCourse = () => {
     }, []);
 
   return (
-    <div className="max-w-[1160px] mx-auto mt-10 px-[30px] md:px-[30px] lg:px-[0px] bg-white rounded-lg ">
+    <div className="max-w-[1160px] w-full mx-auto mt-10 px-[30px] md:px-[30px] lg:px-[0px] bg-white rounded-lg ">
       <h2 className="text-2xl md:text-3xl font-bold text-gray-500 mb-6  pb-2">
         কোর্সটি করে যা শিখবেন
       </h2>
