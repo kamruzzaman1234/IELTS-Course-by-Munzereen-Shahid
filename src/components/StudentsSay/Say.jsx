@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import './swiper-custom.css'; // We'll add styles here
+import './swiper-custom.css';
 
 const Say = ({ items }) => {
   return (
@@ -12,14 +12,28 @@ const Say = ({ items }) => {
         modules={[Navigation]}
         spaceBetween={40}
         slidesPerView={2}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 1,
+          },
+          1024: {
+            slidesPerView: 2,
+          },
+        }}
         className="mySwiper"
       >
         {items.map((item, index) => {
           const { name, description, testimonial, thumb, video_url, profile_image } = item;
 
           return (
-            <SwiperSlide key={index} className="py-[20px] border-1 border-gray-200">
-              <div className="flex flex-col gap-[12px] py-[20px] px-[40px]">
+            <SwiperSlide key={index} className="py-[20px] border border-gray-200 rounded-xl">
+              <div className="flex flex-col gap-[12px] py-[20px] px-[20px]">
                 <div className="w-full">
                   <iframe
                     width="100%"
@@ -32,13 +46,13 @@ const Say = ({ items }) => {
                     allowFullScreen
                   ></iframe>
                 </div>
-                <div className="flex gap-[15px]">
-                  <div className="w-[60px] h-[40px]">
-                    <img src={profile_image} alt="" className="rounded-full" />
+                <div className="flex gap-[15px] items-center">
+                  <div className="w-[60px] h-[60px]">
+                    <img src={profile_image} alt={name} className="rounded-full w-full h-full object-cover" />
                   </div>
                   <div className="w-full">
-                    <h4 className="text-[20px] font-semibold text-black">{name}</h4>
-                    <h5>{testimonial}</h5>
+                    <h4 className="text-[18px] font-semibold text-black">{name}</h4>
+                    <p className="text-gray-600 text-[14px]">{testimonial}</p>
                   </div>
                 </div>
               </div>

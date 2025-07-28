@@ -3,9 +3,11 @@ import ContentPreview from "../../components/ContentPreview/ContentPreview";
 import CourseExclusiveFeature from "../../components/CourseExclusiveFeature/CourseExclusiveFeature";
 import CourseView from "../../components/CourseView/CourseView";
 import DetailsCourse from "../../components/DetailsCourse/DetailsCourse";
+import FreeCourseImg from "../../components/FreeCourseImg/FreeCourseImg";
 import FreePdfArea from "../../components/FreePdfArea/FreePdfArea";
 import HeadersTitle from "../../components/Header/HeadersTitle";
 import LearnCourse from "../../components/LearnCourse/LearnCourse";
+import NeedClass from "../../components/NeedClass/NeedClass";
 import SliderText from "../../components/SliderText/SliderText";
 import StudentsSay from "../../components/StudentsSay/StudentsSay";
 
@@ -25,6 +27,8 @@ const Home = () => {
              <DetailsCourse></DetailsCourse>
              <CourseExclusiveFeature></CourseExclusiveFeature>
              <StudentsSay></StudentsSay>
+             <FreeCourseImg></FreeCourseImg>
+             <NeedClass></NeedClass>
         </div>
 
       </div>
