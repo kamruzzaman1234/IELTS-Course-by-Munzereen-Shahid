@@ -43,7 +43,7 @@ const SliderText = () => {
 
   return (
     <div className="py-[30px]">
-      <div className="max-w-[1160px] px-[20px] md:px-[30px] lg:px-[20px] mx-auto w-full">
+      <div className="max-w-[1260px] px-[20px] md:px-[30px] lg:px-[20px] mx-auto w-full">
         <div>
 
           <div className="border-b bg-white sticky top-0 z-[700px] max-w-[800px] w-full border-gray-300">

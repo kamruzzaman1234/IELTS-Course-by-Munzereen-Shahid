@@ -47,7 +47,7 @@ const Say = ({ items }) => {
                   ></iframe>
                 </div>
                 <div className="flex gap-[15px] items-center">
-                  <div className="w-[60px] h-[60px]">
+                  <div className="w-[40px] h-[40px]">
                     <img src={profile_image} alt={name} className="rounded-full w-full h-full object-cover" />
                   </div>
                   <div className="w-full">

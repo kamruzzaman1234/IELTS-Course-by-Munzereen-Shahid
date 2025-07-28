@@ -16,7 +16,7 @@ const CourseView = () => {
   }, []);
 
   return (
-    <div className="max-w-[1160px] mx-auto px-[30px] md:px-[30px] lg:px-[0px] py-10">
+    <div className="max-w-[1360px] mx-auto px-[30px] md:px-[30px] lg:px-[0px] py-10">
       <h2 className="text-[24px] md:text-[32px] font-bold text-black mb-3">
         How the course is laid out
       </h2>

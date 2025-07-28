@@ -26,7 +26,7 @@ const DetailsCourse = () => {
   };
 
   return (
-    <div className="py-[60px] px-4 max-w-[1160px] w-full mx-auto">
+    <div className="py-[60px] px-4 max-w-[1360px] w-full mx-auto">
       <h3 className="text-3xl font-semibold mb-4">কোর্স সম্পর্কে বিস্তারিত</h3>
       {course.map((item, index) => (
         <div key={index} className="border border-gray-300 rounded-md mb-4">
