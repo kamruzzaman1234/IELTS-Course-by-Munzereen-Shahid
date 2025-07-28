@@ -15,10 +15,10 @@ const HeadersTitle = ()=>{
   },[])
   return(
     <div className="bg-img">
-        <div className="max-w-[1160px] w-full mx-auto">
+        <div className="max-w-[1160px] w-full mx-auto px-[30px] md:px-[30px] lg:px-[0px]">
             <div className="flex flex-col gap-[10px] max-w-[710px] w-full">
               <h2 className="text-[32px] text-white font-bold">{info.title}</h2>
-            <div className="flex gap-[10px] items-center">
+            <div className="flex gap-[10px] flex-col md:flex-row lg:flex-row lg:items-center">
                 <div className="flex gap-1">
                   <FaStar className="text-[20px] text-yellow-600"/>
                   <FaStar className="text-[20px] text-yellow-600"/>
